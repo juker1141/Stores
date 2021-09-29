@@ -1,6 +1,6 @@
 # Vue 電子商務網站
 
-這個 App 主要是使用 Vue CLI 2.x 建置
+這個 App 主要是使用 Vue CLI & Vue 2.x 建置
 
 並且使用 Vuex, Vue-Router 等套件來管理 `state` 及路由
 
