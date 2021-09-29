@@ -20,10 +20,8 @@ export default {
   },
   methods: {
     checkLogin() {
-      this.token = document.cookie.replace(
-        /(?:(?:^|.*;\s*)testToken\s*=\s*([^;]*).*$)|^.*$/,
-        '$1',
-      );
+      this.token = document.cookie.replace(/(?:(?:^|.*;\s*)testToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+
       const url = `${process.env.VUE_APP_APIPATH}auth/check`;
       this.$http
         .post(url, {
