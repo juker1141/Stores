@@ -117,6 +117,8 @@ export default {
     },
     signout() {
       // 將cookie清空即為登出
+      // 開發模式下 path 為 /
+      // 生產模式為 /js_finialhw_Store
       document.cookie = 'testToken=; expires=; path=/js_finialhw_Store';
     },
     goToPage(link) {
