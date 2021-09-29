@@ -112,10 +112,6 @@ export default {
             });
         });
     },
-    signout() {
-      // 將cookie清空即為登出
-      document.cookie = 'testToken=; expires=; path=/';
-    },
     remberMe() {
       if (this.getCookie('user') && this.getCookie('pswd')) {
         this.user.email = this.getCookie('user');

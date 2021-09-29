@@ -117,7 +117,7 @@ export default {
     },
     signout() {
       // 將cookie清空即為登出
-      document.cookie = 'testToken=; expires=; path=/';
+      document.cookie = 'testToken=; expires=; path=/js_finialhw_Store';
     },
     goToPage(link) {
       $('.navbarAdminPosition').removeClass('move');
